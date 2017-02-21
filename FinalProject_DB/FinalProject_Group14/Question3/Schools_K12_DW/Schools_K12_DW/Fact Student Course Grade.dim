@@ -1,0 +1,202 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="954c57a5-1582-4e66-877f-4ab922ae0dcb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Student Course Grade</ID>
+  <Name>Fact Student Course Grade</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1826" scrolltop="-4610" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7594" y="12753" backcolor="16185078" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="factStudentCourseGrade" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3903" height="3532" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800003f0f0000cc0d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_factStudentCourseGrade" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1826</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4610</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ee115f29-0ef0-4d63-873a-f4e3ac7b7d9c">
+    <DataSourceViewID>Schools K12 DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="e77e4ca2-6fe0-42cf-8b62-5f6141c55706">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="728e95c3-01b0-4112-bf25-4f517ddb2ded">
+      <ID>Student Course Grade ID</ID>
+      <Name>Student Course Grade ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="898e5324-07a6-43e6-8aae-0c13ab996969">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="83ddd102-d974-4b63-a827-0797d02f86d6">
+            <TableID>dbo_factStudentCourseGrade</TableID>
+            <ColumnID>StudentCourseGradeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3f9f266b-ceba-4c63-9f9d-6a118e444473">
+          <AttributeID>Grade Type ID</AttributeID>
+          <Name>Grade Type ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d33ba4ac-228b-4762-879a-1f795b7a9d31">
+          <AttributeID>Student Course ID</AttributeID>
+          <Name>Student Course ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eb03d8b2-5598-41e0-ae6b-d60b493d2c57">
+          <AttributeID>Numeric Grade</AttributeID>
+          <Name>Numeric Grade</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="50e200da-7cf5-4aae-96f6-929badbb2e62">
+          <AttributeID>Alpha Grade</AttributeID>
+          <Name>Alpha Grade</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9604cef-6e64-4b12-a9a2-b14a744f93e2">
+          <AttributeID>Credit Attempted</AttributeID>
+          <Name>Credit Attempted</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3792616f-dff8-4ea7-b389-c991efad1438">
+      <ID>Grade Type ID</ID>
+      <Name>Grade Type ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54587fba-517a-4910-911a-a7fcf3cadcb9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2a0191cd-dea3-48a2-b9e2-dcb70e56e6b7">
+            <TableID>dbo_factStudentCourseGrade</TableID>
+            <ColumnID>GradeTypeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="135b8e93-5f8f-461b-8182-1eee64506eb1">
+      <ID>Student Course ID</ID>
+      <Name>Student Course ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b5c4509b-61b3-4437-bffe-22c1e5464bf4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16c5409b-0482-4c7a-8f59-fe73796ab160">
+            <TableID>dbo_factStudentCourseGrade</TableID>
+            <ColumnID>StudentCourseID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="170fc87f-12d9-45b9-a594-df2a9cd19aa7">
+      <ID>Numeric Grade</ID>
+      <Name>Numeric Grade</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aeadbc38-cc23-47db-8f63-8c3a446c3d30">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bed17c8-3322-45e5-a332-c033978f7717">
+            <TableID>dbo_factStudentCourseGrade</TableID>
+            <ColumnID>NumericGrade</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6f65082a-dca3-41ae-9564-778b74e72b11">
+      <ID>Alpha Grade</ID>
+      <Name>Alpha Grade</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="894f63da-a8f8-4ef1-af7d-7f22fb2f4999">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bce96f68-2c64-4f49-b749-a6a1f65bd258">
+            <TableID>dbo_factStudentCourseGrade</TableID>
+            <ColumnID>AlphaGrade</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2a26a39a-28d1-4c2a-8ce9-374f02f6325c">
+      <ID>Credit Attempted</ID>
+      <Name>Credit Attempted</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="570aa7ab-3710-49e0-b71a-51b7f04aff3a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92d6cd01-ae2e-4c1d-b00d-6484d1645f03">
+            <TableID>dbo_factStudentCourseGrade</TableID>
+            <ColumnID>CreditAttempted</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

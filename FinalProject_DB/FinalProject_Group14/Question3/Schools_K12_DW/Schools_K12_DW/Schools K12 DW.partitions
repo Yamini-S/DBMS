@@ -1,0 +1,125 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="21e3581c-4f52-49e6-8109-b0d123374fb4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Schools K12 DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact HSGT Score</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="347d6ae2-a401-400d-8283-b542e7fce665">
+          <ID>Fact HSGT Score</ID>
+          <Name>Fact HSGT Score</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ff8fdc8c-0b6e-440c-b724-8839d4aa4e27">
+            <DataSourceViewID>Schools K12 DW</DataSourceViewID>
+            <TableID>dbo_factHSGTScore</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Standardized Test Score</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9e9a4bd9-e25a-4daf-a731-5d0db2ef35b7">
+          <ID>Fact Standardized Test Score</ID>
+          <Name>Fact Standardized Test Score</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="45423727-b445-4b58-bc4b-64e1c786604b">
+            <DataSourceViewID>Schools K12 DW</DataSourceViewID>
+            <TableID>dbo_factStandardizedTestScore</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Student Course</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e3060c34-8e93-4fcb-afbd-db110d5cdb17">
+          <ID>Fact Student Course</ID>
+          <Name>Fact Student Course</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f19be2cc-e3b1-4430-be8d-ade0f3067596">
+            <DataSourceViewID>Schools K12 DW</DataSourceViewID>
+            <TableID>dbo_factStudentCourse</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Student Course Grade</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="96fe20ff-a846-4807-8d06-eae83df105df">
+          <ID>Fact Student Course Grade</ID>
+          <Name>Fact Student Course Grade</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="aae1be3d-c607-44c1-9f81-b1f591949a06">
+            <DataSourceViewID>Schools K12 DW</DataSourceViewID>
+            <TableID>dbo_factStudentCourseGrade</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Standardized Test Domain Score</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5186cc63-b832-4f50-9682-2428c539d5ac">
+          <ID>Fact Standardized Test Domain Score</ID>
+          <Name>Fact Standardized Test Domain Score</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d378ad4e-f7c1-4332-a82b-05e12ee5e93e">
+            <DataSourceViewID>Schools K12 DW</DataSourceViewID>
+            <TableID>dbo_factStandardizedTestDomainScore</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact HSGT Domain Score</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6bda61fb-6c62-40e2-bf79-590c674045a9">
+          <ID>Fact HSGT Domain Score</ID>
+          <Name>Fact HSGT Domain Score</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a1e36db4-a64b-414a-b3e3-941abe1656d6">
+            <DataSourceViewID>Schools K12 DW</DataSourceViewID>
+            <TableID>dbo_factHSGTDomainScore</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
